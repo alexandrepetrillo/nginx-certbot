@@ -5,10 +5,10 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(horodateur.me www.horodateur.me)
+domains=(dev.horodateur.me)
 rsa_key_size=4096
 data_path="./data/certbot"
-email="contact@horodateur.me" # Adding a valid address is strongly recommended
+email="dev@horodateur.me" # Adding a valid address is strongly recommended
 staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 if [ -d "$data_path" ]; then
